@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Primary Meta -->
+  <title>Sasi Kumar Reddy Siddala — Mainframe & Backend Developer</title>
+  <meta name="description" content="Portfolio of Sasi Kumar Reddy Siddala — Mainframe Developer (COBOL, JCL, DB2, CICS), Java, Spring Boot, AI Engineer. Open to backend and enterprise developer roles." />
+  <meta name="author" content="Sasi Kumar Reddy Siddala" />
+  <meta name="keywords" content="Sasi Kumar Reddy, Mainframe Developer, COBOL, JCL, DB2, CICS, Java, Spring Boot, Backend Developer, Portfolio" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Sasi Kumar Reddy Siddala — Mainframe & Backend Developer" />
+  <meta property="og:description" content="Mainframe Developer (COBOL/JCL/DB2/CICS) · Java & Spring Boot Backend · AI Engineer. View projects and download resume." />
+  <meta property="og:url"         content="https://sasisiddala.github.io/Portfolio/" />
+  <meta property="og:image"       content="assets/og-thumbnail.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Sasi Kumar Reddy Siddala — Mainframe & Backend Developer" />
+  <meta name="twitter:description" content="Mainframe Developer (COBOL/JCL/DB2/CICS) · Java & Spring Boot Backend · AI Engineer." />
+  <meta name="twitter:image"       content="assets/og-thumbnail.png" />
+
+  <!-- Favicon (inline SVG data URI — initials SKS) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23090B10'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' fill='%2300D4FF' font-family='system-ui' font-weight='800' font-size='11'%3ESKS%3C/text%3E%3C/svg%3E" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700;800&family=Syne:wght@700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ═══════════════════════════════════════════════════════
+       NAVIGATION
+  ════════════════════════════════════════════════════════════ -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <!-- Logo -->
+      <a href="#hero" class="nav-logo" aria-label="SKS — Go to top">SKS</a>
+
+      <!-- Desktop Links -->
+      <ul class="nav-links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- Desktop Resume CTA -->
+      <a href="assets/Sasi_Kumar_Reddy_Siddala_Resume.pdf"
+         download
+         class="btn-nav-resume"
+         aria-label="Download Resume PDF">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+        </svg>
+        Download Resume
+      </a>
+
+      <!-- Hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-nav-overlay">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav Overlay -->
+  <div id="mobile-nav-overlay" class="mobile-nav-overlay" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+    <a href="assets/Sasi_Kumar_Reddy_Siddala_Resume.pdf"
+       download
+       class="btn-nav-resume-mobile"
+       aria-label="Download CV">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+      </svg>
+      Download CV
+    </a>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════
+       HERO SECTION
+  ════════════════════════════════════════════════════════════ -->
+  <section id="hero" aria-label="Introduction">
+    <div class="hero-noise" aria-hidden="true"></div>
+    <div class="hero-bg-code" aria-hidden="true"></div>
+
+    <div class="container">
+      <!-- Left column: content -->
+      <div class="hero-content">
+        <div class="hero-tag">Available for Opportunities</div>
+
+        <h1 class="hero-name">Sasi Kumar<br>Reddy Siddala</h1>
+
+        <p class="hero-role" aria-live="polite">
+          <span class="typewriter-text" aria-label="AI Engineer, Backend Developer, Mainframe Developer"></span>
+        </p>
+
+        <p class="hero-tagline">
+          Building scalable backend systems, AI-powered tools, and enterprise-grade applications.
+        </p>
+
+        <div class="hero-actions">
+          <a href="assets/Sasi_Kumar_Reddy_Siddala_Resume.pdf"
+             download
+             class="btn-primary"
+             id="hero-resume-btn"
+             aria-label="Download Resume PDF">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            Download Resume
+          </a>
+
+          <a href="https://github.com/sasisiddala"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="btn-outline"
+             aria-label="GitHub — opens in new tab">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.482 0-.237-.009-.866-.014-1.7-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.004.071 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.091-.647.35-1.088.636-1.338-2.22-.253-4.555-1.112-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.104-.253-.446-1.272.099-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.845c.85.004 1.705.115 2.504.337 1.909-1.295 2.748-1.025 2.748-1.025.546 1.378.202 2.397.1 2.65.641.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.944.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.2 22 16.447 22 12.021 22 6.484 17.522 2 12 2z"/>
+            </svg>
+            GitHub
+          </a>
+
+          <a href="https://linkedin.com/in/sasi-kumar-reddy-siddala-03ab3531a"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="btn-outline"
+             aria-label="LinkedIn — opens in new tab">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+            LinkedIn
+          </a>
+        </div>
+
+        <div class="hero-scroll" aria-hidden="true">
+          <div class="scroll-line"></div>
+          Scroll to explore
+        </div>
+      </div>
+
+      <!-- Right column: photo + stats -->
+      <div class="hero-right">
+
+        <!-- Photo frame -->
+        <div class="hero-photo-wrap">
+          <div class="hero-photo-ring"></div>
+          <div class="hero-photo-ring hero-photo-ring--2"></div>
+          <img
+            src="assets/sasi-photo.jpg"
+            alt="Sasi Kumar Reddy Siddala — Mainframe &amp; Backend Developer"
+            class="hero-photo"
+            width="360"
+            height="400"
+            loading="eager"
+          />
+          <!-- Corner accent dots -->
+          <span class="photo-dot photo-dot--tl" aria-hidden="true"></span>
+          <span class="photo-dot photo-dot--br" aria-hidden="true"></span>
+        </div>
+
+        <!-- Stat cards below photo -->
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="hero-stat-value">3+</span>
+            <span class="hero-stat-label">Projects Shipped</span>
+          </div>
+          <div class="hero-stat-divider" aria-hidden="true"></div>
+          <div class="hero-stat">
+            <span class="hero-stat-value accent">Open</span>
+            <span class="hero-stat-label">to Opportunities</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════
+       ABOUT SECTION
+  ════════════════════════════════════════════════════════════ -->
+  <section id="about" aria-label="About Sasi">
+    <div class="container">
+      <p class="section-label reveal">About</p>
+      <h2 class="section-title reveal">Who I Am</h2>
+      <div class="section-underline reveal"></div>
+
+      <div class="about-grid">
+        <!-- Left: Summary -->
+        <div class="reveal-left">
+          <p class="about-summary">
+            AI and Backend Developer specializing in scalable application development, intelligent systems, and enterprise software solutions. Experienced in building backend services using Java and Spring Boot, developing web applications, and creating AI-powered tools that solve real-world problems. Strong interest in backend architecture, automation, cloud-ready systems, and enterprise technologies including mainframe development.
+          </p>
+
+          <div class="availability-badge" aria-label="Status: Available for Opportunities">
+            Available for Opportunities
+          </div>
+        </div>
+
+        <!-- Right: Education Timeline -->
+        <div class="reveal-right">
+          <p class="section-label" style="margin-bottom:1.25rem;">Education</p>
+
+          <div class="education-timeline" role="list" aria-label="Education history">
+
+            <div class="edu-item" role="listitem">
+              <p class="edu-year">2022 – 2026</p>
+              <h3 class="edu-degree">B.Tech — Artificial Intelligence &amp; Machine Learning</h3>
+              <p class="edu-school">Vel Tech Rangarajan Dr. Sagunthala R&amp;D Institute of Science and Technology, Chennai</p>
+              <span class="edu-grade">CGPA: 8.7</span>
+            </div>
+
+            <div class="edu-item" role="listitem">
+              <p class="edu-year">2021 – 2022</p>
+              <h3 class="edu-degree">Class XII — Board of Secondary Education</h3>
+              <p class="edu-school">Sri Chaitanya Junior College</p>
+              <span class="edu-grade">Score: 7.9</span>
+            </div>
+
+            <div class="edu-item" role="listitem">
+              <p class="edu-year">2019 – 2020</p>
+              <h3 class="edu-degree">Class X — Board of Secondary Education</h3>
+              <p class="edu-school">Srichaitanya E.M. High School</p>
+              <span class="edu-grade">GPA: 8.9</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       SKILLS SECTION
+  ════════════════════════════════════════════════════════════ -->
+  <section id="skills" aria-label="Technical Skills">
+    <div class="container">
+      <p class="section-label reveal">Expertise</p>
+      <h2 class="section-title reveal">Tech Stack</h2>
+      <div class="section-underline reveal"></div>
+
+      <div class="skills-grid">
+
+        <!-- 1. MAINFRAME — First card, key differentiator -->
+        <div class="skill-card mainframe-card reveal" data-delay="1">
+          <div class="skill-category-icon" aria-hidden="true">🖥️</div>
+          <p class="skill-category">Enterprise · Key Differentiator</p>
+          <h3 class="skill-card-title">Mainframe Technologies</h3>
+          <div class="skill-tags" role="list" aria-label="Mainframe skills">
+            <span class="skill-tag" role="listitem">COBOL</span>
+            <span class="skill-tag" role="listitem">JCL</span>
+            <span class="skill-tag" role="listitem">DB2</span>
+            <span class="skill-tag" role="listitem">CICS</span>
+          </div>
+        </div>
+
+        <!-- 2. Languages -->
+        <div class="skill-card reveal" data-delay="2">
+          <div class="skill-category-icon" aria-hidden="true">{ }</div>
+          <p class="skill-category">Core</p>
+          <h3 class="skill-card-title">Languages</h3>
+          <div class="skill-tags" role="list" aria-label="Programming languages">
+            <span class="skill-tag" role="listitem">Java</span>
+            <span class="skill-tag" role="listitem">Python</span>
+            <span class="skill-tag" role="listitem">SQL</span>
+            <span class="skill-tag" role="listitem">HTML</span>
+          </div>
+        </div>
+
+        <!-- 3. Frameworks -->
+        <div class="skill-card reveal" data-delay="3">
+          <div class="skill-category-icon" aria-hidden="true">⚙️</div>
+          <p class="skill-category">Backend</p>
+          <h3 class="skill-card-title">Frameworks</h3>
+          <div class="skill-tags" role="list" aria-label="Frameworks">
+            <span class="skill-tag" role="listitem">Spring Boot</span>
+            <span class="skill-tag" role="listitem">Hibernate</span>
+            <span class="skill-tag" role="listitem">REST APIs</span>
+            <span class="skill-tag" role="listitem">Spring Cloud</span>
+          </div>
+        </div>
+
+        <!-- 4. Databases -->
+        <div class="skill-card reveal" data-delay="4">
+          <div class="skill-category-icon" aria-hidden="true">🗄️</div>
+          <p class="skill-category">Data</p>
+          <h3 class="skill-card-title">Databases</h3>
+          <div class="skill-tags" role="list" aria-label="Databases">
+            <span class="skill-tag" role="listitem">MySQL</span>
+            <span class="skill-tag" role="listitem">MongoDB</span>
+          </div>
+        </div>
+
+        <!-- 5. Tools -->
+        <div class="skill-card reveal" data-delay="5">
+          <div class="skill-category-icon" aria-hidden="true">🛠️</div>
+          <p class="skill-category">DevOps & Tools</p>
+          <h3 class="skill-card-title">Tools</h3>
+          <div class="skill-tags" role="list" aria-label="Tools">
+            <span class="skill-tag" role="listitem">Git</span>
+            <span class="skill-tag" role="listitem">GitHub</span>
+            <span class="skill-tag" role="listitem">Maven</span>
+            <span class="skill-tag" role="listitem">Postman</span>
+          </div>
+        </div>
+
+        <!-- 6. Platforms -->
+        <div class="skill-card reveal" data-delay="6">
+          <div class="skill-category-icon" aria-hidden="true">💻</div>
+          <p class="skill-category">IDEs & Platforms</p>
+          <h3 class="skill-card-title">Platforms</h3>
+          <div class="skill-tags" role="list" aria-label="Platforms">
+            <span class="skill-tag" role="listitem">VS Code</span>
+            <span class="skill-tag" role="listitem">IntelliJ IDEA</span>
+            <span class="skill-tag" role="listitem">Eclipse IDE</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       PROJECTS SECTION
+  ════════════════════════════════════════════════════════════ -->
+  <section id="projects" aria-label="Projects">
+    <div class="container">
+      <p class="section-label reveal">Work</p>
+      <h2 class="section-title reveal">Featured Projects</h2>
+      <div class="section-underline reveal"></div>
+
+      <div class="projects-grid">
+
+        <!-- P1: StreamSnap -->
+        <article class="project-card reveal" data-delay="1" aria-label="StreamSnap project">
+          <p class="project-number">01 / StreamSnap</p>
+          <h3 class="project-title">Adaptive YouTube<br>Media Downloader</h3>
+          <p class="project-desc">
+            A web application that allows users to download YouTube videos or extract audio in multiple formats and quality options.
+          </p>
+          <div class="project-tech" aria-label="Tech stack">
+            <span class="tech-chip">Java</span>
+            <span class="tech-chip">Spring Boot</span>
+            <span class="tech-chip">HTML</span>
+            <span class="tech-chip">CSS</span>
+            <span class="tech-chip">JavaScript</span>
+          </div>
+          <ul class="project-features" aria-label="Key features">
+            <li>Multiple video quality options (240p → 1080p)</li>
+            <li>MP3 and MP4 download formats</li>
+            <li>Responsive cross-device interface</li>
+            <li>Spring Boot REST API backend</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://ai-powered-youtube-video-downloader.vercel.app"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="project-link"
+               aria-label="StreamSnap Live Demo — opens in new tab">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+              </svg>
+              Live Demo
+            </a>
+            <a href="https://github.com/sasisiddala"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="project-link muted"
+               aria-label="GitHub Repository — opens in new tab">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.482 0-.237-.009-.866-.014-1.7-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.004.071 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.091-.647.35-1.088.636-1.338-2.22-.253-4.555-1.112-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.104-.253-.446-1.272.099-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.845c.85.004 1.705.115 2.504.337 1.909-1.295 2.748-1.025 2.748-1.025.546 1.378.202 2.397.1 2.65.641.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.944.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.2 22 16.447 22 12.021 22 6.484 17.522 2 12 2z"/>
+              </svg>
+              Repository
+            </a>
+          </div>
+        </article>
+
+        <!-- P2: Online Grocery Store -->
+        <article class="project-card reveal" data-delay="2" aria-label="Online Grocery Store project">
+          <p class="project-number">02 / Backend System</p>
+          <h3 class="project-title">Online<br>Grocery Store</h3>
+          <p class="project-desc">
+            A backend system for an e-commerce grocery platform with secure payment processing and responsive front-end integration.
+          </p>
+          <div class="project-tech" aria-label="Tech stack">
+            <span class="tech-chip">Java</span>
+            <span class="tech-chip">Spring Boot</span>
+            <span class="tech-chip">Spring Security</span>
+            <span class="tech-chip">REST APIs</span>
+            <span class="tech-chip">MySQL</span>
+          </div>
+          <ul class="project-features" aria-label="Key features">
+            <li>Secure payment processing via Spring Security APIs</li>
+            <li>Workflow efficiency improved by 15% via optimized backend</li>
+            <li>Responsive UI collaboration with front-end team</li>
+            <li>RESTful API design with Maven build management</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/sasisiddala"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="project-link"
+               aria-label="GitHub Repository — opens in new tab">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.482 0-.237-.009-.866-.014-1.7-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.004.071 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.091-.647.35-1.088.636-1.338-2.22-.253-4.555-1.112-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.104-.253-.446-1.272.099-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.845c.85.004 1.705.115 2.504.337 1.909-1.295 2.748-1.025 2.748-1.025.546 1.378.202 2.397.1 2.65.641.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.944.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.2 22 16.447 22 12.021 22 6.484 17.522 2 12 2z"/>
+              </svg>
+              Repository
+            </a>
+          </div>
+        </article>
+
+        <!-- P3: ImageShrink -->
+        <article class="project-card reveal" data-delay="3" aria-label="ImageShrink project">
+          <p class="project-number">03 / ImageShrink</p>
+          <h3 class="project-title">Image<br>Compressor</h3>
+          <p class="project-desc">
+            A lightweight client-side web tool that compresses images while preserving visual quality, reducing file size for faster uploads and storage efficiency.
+          </p>
+          <div class="project-tech" aria-label="Tech stack">
+            <span class="tech-chip">JavaScript</span>
+            <span class="tech-chip">HTML</span>
+            <span class="tech-chip">CSS</span>
+          </div>
+          <ul class="project-features" aria-label="Key features">
+            <li>Client-side compression — no server upload required</li>
+            <li>Drag-and-drop file upload interface</li>
+            <li>Instant preview and optimized file download</li>
+            <li>Works across all modern browsers</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://imageshrink.web.app"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="project-link"
+               aria-label="ImageShrink Live Demo — opens in new tab">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+              </svg>
+              Live Demo
+            </a>
+            <a href="https://github.com/sasisiddala"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="project-link muted"
+               aria-label="GitHub Repository — opens in new tab">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.482 0-.237-.009-.866-.014-1.7-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.004.071 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.091-.647.35-1.088.636-1.338-2.22-.253-4.555-1.112-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.104-.253-.446-1.272.099-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.845c.85.004 1.705.115 2.504.337 1.909-1.295 2.748-1.025 2.748-1.025.546 1.378.202 2.397.1 2.65.641.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.944.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.2 22 16.447 22 12.021 22 6.484 17.522 2 12 2z"/>
+              </svg>
+              Repository
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       EXPERIENCE & VOLUNTEERING SECTION
+  ════════════════════════════════════════════════════════════ -->
+  <section id="experience" aria-label="Experience and Volunteering">
+    <div class="container">
+      <p class="section-label reveal">Journey</p>
+      <h2 class="section-title reveal">Experience &amp; Volunteering</h2>
+      <div class="section-underline reveal"></div>
+
+      <div class="experience-timeline" role="list">
+
+        <article class="exp-card reveal" data-delay="1" role="listitem">
+          <div class="exp-meta">
+            <div>
+              <h3 class="exp-role">Student Peer Evaluator</h3>
+              <p class="exp-org">Tech Star Summit 2025 — SIMATS Engineering, Chennai</p>
+            </div>
+            <span class="exp-year">2025</span>
+          </div>
+          <ul class="exp-bullets" aria-label="Role details">
+            <li>Evaluated technical project presentations by student teams across engineering disciplines</li>
+            <li>Provided structured feedback on project feasibility, innovation, and implementation quality</li>
+            <li>Collaborated with faculty panel to assess and score projects against defined criteria</li>
+          </ul>
+        </article>
+
+        <article class="exp-card reveal" data-delay="2" role="listitem">
+          <div class="exp-meta">
+            <div>
+              <h3 class="exp-role">Placement Student Coordinator</h3>
+              <p class="exp-org">Vel Tech University — Campus to Corporate Program</p>
+            </div>
+            <span class="exp-year">2024 – 2025</span>
+          </div>
+          <ul class="exp-bullets" aria-label="Role details">
+            <li>Coordinated placement drives and facilitated communication between students and recruiters</li>
+            <li>Organized pre-placement training sessions, mock interviews, and resume workshops</li>
+            <li>Acted as liaison between the Placement Cell and student community to improve shortlisting rates</li>
+          </ul>
+        </article>
+
+        <article class="exp-card reveal" data-delay="3" role="listitem">
+          <div class="exp-meta">
+            <div>
+              <h3 class="exp-role">Volunteer — Unnat Bharat Abhiyan</h3>
+              <p class="exp-org">Ministry of Education, Government of India Initiative</p>
+            </div>
+            <span class="exp-year">2023 – 2024</span>
+          </div>
+          <ul class="exp-bullets" aria-label="Role details">
+            <li>Participated in rural development and digital literacy outreach under the Ministry of Education</li>
+            <li>Assisted in surveying village households to identify infrastructure and educational needs</li>
+            <li>Contributed to awareness programs promoting technology adoption in underserved communities</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       CERTIFICATIONS SECTION
+  ════════════════════════════════════════════════════════════ -->
+  <section id="certifications" aria-label="Certifications">
+    <div class="container">
+      <p class="section-label reveal">Credentials</p>
+      <h2 class="section-title reveal">Certifications</h2>
+      <div class="section-underline reveal"></div>
+
+      <div class="certs-grid">
+
+        <div class="cert-badge reveal-scale" data-delay="1">
+          <div class="cert-icon" aria-hidden="true">📚</div>
+          <div>
+            <p class="cert-issuer">NPTEL</p>
+            <p class="cert-title">Human Computer Interaction</p>
+          </div>
+        </div>
+
+        <div class="cert-badge reveal-scale" data-delay="2">
+          <div class="cert-icon" aria-hidden="true">🏢</div>
+          <div>
+            <p class="cert-issuer">Hewlett Packard Enterprise</p>
+            <p class="cert-title">Software Engineering Job Simulation</p>
+          </div>
+        </div>
+
+        <div class="cert-badge reveal-scale" data-delay="3">
+          <div class="cert-icon" aria-hidden="true">🌐</div>
+          <div>
+            <p class="cert-issuer">Accenture UK</p>
+            <p class="cert-title">Developer and Technology Job Simulation</p>
+          </div>
+        </div>
+
+        <div class="cert-badge reveal-scale" data-delay="4">
+          <div class="cert-icon" aria-hidden="true">🤖</div>
+          <div>
+            <p class="cert-issuer">Infosys Springboard</p>
+            <p class="cert-title">OpenAI GPT-3 for Developers</p>
+          </div>
+        </div>
+
+        <div class="cert-badge reveal-scale" data-delay="5">
+          <div class="cert-icon" aria-hidden="true">🧠</div>
+          <div>
+            <p class="cert-issuer">Infosys Springboard</p>
+            <p class="cert-title">Deep Learning for Developers</p>
+          </div>
+        </div>
+
+        <div class="cert-badge reveal-scale" data-delay="6">
+          <div class="cert-icon" aria-hidden="true">✨</div>
+          <div>
+            <p class="cert-issuer">Infosys Springboard</p>
+            <p class="cert-title">Generative Models for Developers</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       CONTACT SECTION
+  ════════════════════════════════════════════════════════════ -->
+  <section id="contact" aria-label="Contact">
+    <div class="container">
+      <p class="section-label reveal">Let's Connect</p>
+      <h2 class="section-title reveal">Get In Touch</h2>
+      <div class="section-underline reveal"></div>
+
+      <div class="contact-grid">
+
+        <!-- Left: Info -->
+        <div class="reveal-left">
+          <h3 class="contact-info-title">Open to Opportunities</h3>
+          <p class="contact-info-sub">
+            Looking for backend, mainframe, or Java developer roles. If you have an opportunity that fits my profile, reach out — I typically respond within 24 hours.
+          </p>
+
+          <div class="open-to-work" aria-label="Status: Open to work">Open to Work</div>
+
+          <div class="contact-links" aria-label="Contact information">
+
+            <a href="mailto:sasisiddala@gmail.com"
+               class="contact-link-item"
+               aria-label="Email Sasi">
+              <div class="contact-link-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+              <div>
+                <p class="contact-link-label">Email</p>
+                <p class="contact-link-value">sasisiddala@gmail.com</p>
+              </div>
+            </a>
+
+            <a href="tel:+919390087339"
+               class="contact-link-item"
+               aria-label="Call Sasi">
+              <div class="contact-link-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12.1 19.79 19.79 0 0 1 1.61 3.56a2 2 0 0 1 1.97-2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.08 6.08l1.65-1.65a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </div>
+              <div>
+                <p class="contact-link-label">Phone</p>
+                <p class="contact-link-value">+91 93900 87339</p>
+              </div>
+            </a>
+
+            <a href="https://github.com/sasisiddala"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="contact-link-item"
+               aria-label="GitHub — opens in new tab">
+              <div class="contact-link-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.482 0-.237-.009-.866-.014-1.7-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.004.071 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.091-.647.35-1.088.636-1.338-2.22-.253-4.555-1.112-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.104-.253-.446-1.272.099-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.845c.85.004 1.705.115 2.504.337 1.909-1.295 2.748-1.025 2.748-1.025.546 1.378.202 2.397.1 2.65.641.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.944.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.2 22 16.447 22 12.021 22 6.484 17.522 2 12 2z"/>
+                </svg>
+              </div>
+              <div>
+                <p class="contact-link-label">GitHub</p>
+                <p class="contact-link-value">github.com/sasisiddala</p>
+              </div>
+            </a>
+
+            <a href="https://linkedin.com/in/sasi-kumar-reddy-siddala-03ab3531a"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="contact-link-item"
+               aria-label="LinkedIn — opens in new tab">
+              <div class="contact-link-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+              </div>
+              <div>
+                <p class="contact-link-label">LinkedIn</p>
+                <p class="contact-link-value">sasi-kumar-reddy-siddala</p>
+              </div>
+            </a>
+
+          </div>
+        </div>
+
+        <!-- Right: Contact Form -->
+        <div class="reveal-right">
+          <form class="contact-form"
+                id="contact-form"
+                aria-label="Send a message to Sasi"
+                novalidate>
+
+            <div class="form-group">
+              <label for="contact-name">Name</label>
+              <input
+                type="text"
+                id="contact-name"
+                name="name"
+                placeholder="Your name"
+                required
+                autocomplete="name"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email">Email</label>
+              <input
+                type="email"
+                id="contact-email"
+                name="email"
+                placeholder="your@email.com"
+                required
+                autocomplete="email"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea
+                id="contact-message"
+                name="message"
+                rows="5"
+                placeholder="Tell me about the role or opportunity..."
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-submit">
+              <button type="submit" class="btn-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                </svg>
+                Send Message
+              </button>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="footer-inner">
+      <span class="footer-logo">SKS</span>
+      <p class="footer-copy">© 2026 Sasi Kumar Reddy Siddala. All rights reserved.</p>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="#hero">Top</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+
+</body>
+</html>

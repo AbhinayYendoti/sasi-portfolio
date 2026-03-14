@@ -1,0 +1,168 @@
+/* ============================================================
+   ANIMATIONS.CSS — Keyframes, Scroll Reveal, Transitions
+   ============================================================ */
+
+/* ── Keyframes ───────────────────────────────────────────── */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ── Hero Entry Animations ───────────────────────────────── */
+.hero-tag {
+  animation: fadeIn 0.5s ease-out both;
+  animation-delay: 0.1s;
+}
+
+.hero-name {
+  animation: fadeUp 0.6s ease-out both;
+  animation-delay: 0.3s;
+}
+
+.hero-role {
+  animation: fadeUp 0.6s ease-out both;
+  animation-delay: 0.5s;
+}
+
+.hero-tagline {
+  animation: fadeUp 0.6s ease-out both;
+  animation-delay: 0.65s;
+}
+
+.hero-actions {
+  animation: fadeUp 0.6s ease-out both;
+  animation-delay: 0.8s;
+}
+
+.hero-scroll {
+  animation: fadeIn 0.6s ease-out both;
+  animation-delay: 1.2s;
+}
+
+/* ── Scroll Reveal — base state ──────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger variants for project / cert cards */
+.reveal[data-delay="1"] { transition-delay: 0.1s; }
+.reveal[data-delay="2"] { transition-delay: 0.2s; }
+.reveal[data-delay="3"] { transition-delay: 0.3s; }
+.reveal[data-delay="4"] { transition-delay: 0.4s; }
+.reveal[data-delay="5"] { transition-delay: 0.5s; }
+.reveal[data-delay="6"] { transition-delay: 0.6s; }
+
+/* Slide-in variants */
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-24px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.reveal-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(24px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.reveal-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Scale in for badges / cert cards */
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.94);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+.reveal-scale.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ── Button Hover Bloom ───────────────────────────────────── */
+.btn-primary,
+.btn-outline,
+.btn-nav-resume {
+  will-change: transform, box-shadow;
+}
+
+/* ── Skill Tag Hover ─────────────────────────────────────── */
+.skill-tag {
+  will-change: border-color, color, background;
+}
+
+/* ── Mobile overlay slide ────────────────────────────────── */
+@keyframes overlayIn {
+  from {
+    opacity: 0;
+    transform: scale(1.04);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.mobile-nav-overlay.open {
+  animation: overlayIn 0.25s ease-out forwards;
+}
+
+/* ── Scroll Progress Pulse ───────────────────────────────── */
+#scroll-progress {
+  transition: width 0.08s linear;
+}
